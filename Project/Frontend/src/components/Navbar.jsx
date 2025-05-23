@@ -3,6 +3,8 @@ import Login from "./Login";
 import Logout from "./Logout";
 import { useAuth } from "../context/AuthProvider";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.gif";
+
 
 function Navbar() {
   const [authUser, setAuthUser] = useAuth();
@@ -95,7 +97,7 @@ function Navbar() {
             </div>
             <Link to="/" className="flex items-center text-2xl font-bold cursor-pointer gap-2">
               <img
-                src="./public/logo.gif"
+                src={logo}
                 alt="Logo"
                 className="h-20 w-20 object-contain rounded-full mr-4"
               />

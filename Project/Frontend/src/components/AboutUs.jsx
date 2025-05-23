@@ -1,6 +1,9 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import img1 from "../assets/upendra.jpg";
+import img2 from "../assets/rks.png";
+import img3 from "../assets/ankur.jpg";
 
 function AboutUs() {
   return (
@@ -31,7 +34,7 @@ function AboutUs() {
             {/* Designer */}
             <div className="flex flex-col items-center">
               <img
-                src=".\public\upendra.jpg"
+                src={img1}
                 alt="Designer"
                 className="w-24 h-24 rounded-full mb-2 border-4 border-pink-300 object-cover"
               />
@@ -44,7 +47,7 @@ function AboutUs() {
             {/* Producer */}
             <div className="flex flex-col items-center">
               <img
-                src="./public/ankur.jpg"
+                src={img3}
                 alt="Producer"
                 className="w-24 h-24 rounded-full mb-2 border-4 border-pink-300 object-cover"
               />
@@ -56,12 +59,12 @@ function AboutUs() {
             </div>
             <div className="flex flex-col items-center">
               <img
-                src="./public/rks.png"
-                alt="Producer"
+                src={img2}
+                alt="Director"
                 className="w-24 h-24 rounded-full mb-2 border-4 border-pink-300 object-cover"
               />
               <div className="font-bold text-lg">Ramkrishna Singh</div>
-              <div className="text-gray-600 dark:text-gray-300 text-sm mb-1">Producer</div>
+              <div className="text-gray-600 dark:text-gray-300 text-sm mb-1">Director</div>
               <a href="mailto:priya.sharma@email.com" className="text-blue-600 underline text-sm">
                 rs2940011@gmail.com
               </a>

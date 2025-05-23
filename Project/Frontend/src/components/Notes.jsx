@@ -1,5 +1,14 @@
 import React from "react";
 import Cards from "./Cards";
+import cImg from "../assets/c.jpeg";
+import cppImg from "../assets/c++.jpeg";
+import javaImg from "../assets/java.jpeg";
+import pythonImg from "../assets/python.jpeg";
+import dbmsImg from "../assets/dbms.jpeg";
+import sqlImg from "../assets/sql.jpeg";
+import webImg from "../assets/web.jpeg";
+import androidImg from "../assets/android.jpeg";
+import comingSoonImg from "../assets/comingsoon.png";
 
 const notesData = [
   {
@@ -7,7 +16,7 @@ const notesData = [
     name: "C Language",
     category: "Notes",
     price: 0,
-    image: "/public/c.jpeg",
+    image: cImg,
     title: "Master the basics of C programming with these comprehensive notes.",
     link: "https://drive.google.com/file/d/1cV-d07MmposzGIUpNTrPlidlMelUSJSi/view?usp=drive_link"
   },
@@ -16,7 +25,7 @@ const notesData = [
     name: "C++ Language",
     category: "Notes",
     price: 0,
-    image: "/public/c++.jpeg",
+    image: cppImg,
     title: "Understand object-oriented programming with C++ notes.",
     link: "https://drive.google.com/file/d/16C6_0EA3JXrM3kj8k8S8d-60Xsm2fSIV/view?usp=drive_link"
   },
@@ -25,7 +34,7 @@ const notesData = [
     name: "Java Language",
     category: "Notes",
     price: 0,
-    image: "/public/java.jpeg",
+    image: javaImg,
     title: "Learn Java fundamentals and core concepts for placements.",
     link: "https://drive.google.com/file/d/13O6-eZYfnf6CC-AvAgQ8RDn8vRhbCbno/view?usp=drive_link"
   },
@@ -34,7 +43,7 @@ const notesData = [
     name: "Python Language",
     category: "Notes",
     price: 0,
-    image: "/public/python.jpeg",
+    image: pythonImg,
     title: "Easy-to-follow Python notes for beginners and freshers.",
     link: "https://drive.google.com/file/d/1Jpr5We4-XnOR-zklmFD4bnNVL8EWTpYQ/view?usp=drive_link"
   },
@@ -43,7 +52,7 @@ const notesData = [
     name: "Database Management System",
     category: "Notes",
     price: 0,
-    image: "/public/dbms.jpeg",
+    image: dbmsImg,
     title: "Essential DBMS concepts and notes for engineering students.",
     link: "https://drive.google.com/file/d/1ck-9L0_G_79Xn6ILXGnPLXzSWatDKMjK/view?usp=drive_link"
   },
@@ -52,7 +61,7 @@ const notesData = [
     name: "Structured Query Language",
     category: "Notes",
     price: 0,
-    image: "/public/sql.jpeg",
+    image: sqlImg,
     title: "SQL notes to help you manage and query databases efficiently.",
     link: "https://drive.google.com/file/d/1Y_QBF4XIKQdWntK6nmPRrLkAo9xkSDZY/view?usp=drive_link"
   },
@@ -61,7 +70,7 @@ const notesData = [
     name: "Web Development",
     category: "Notes",
     price: 0,
-    image: "/public/web.jpeg",
+    image: webImg,
     title: "Kickstart your web development journey with these notes.",
     link: "https://drive.google.com/file/d/1s6vS7vTjK2KjPTYuI2TSOVrVoIbWLUMR/view?usp=sharing"
   },
@@ -70,10 +79,19 @@ const notesData = [
     name: "Android Development",
     category: "Notes",
     price: 0,
-    image: "/public/android.jpeg",
+    image: androidImg,
     title: "Get started with Android app development using these notes.",
     link: "https://drive.google.com/file/d/1s6vS7vTjK2KjPTYuI2TSOVrVoIbWLUMR/view?usp=sharing"
   },
+   {
+    id: 9,
+    name: "More Coming Soon",
+    category: "Notes",
+    price: 0,
+    image: comingSoonImg,
+    title: "Stay tuned! Many more high-quality notes and resources will be added soon.",
+    link: null
+  }
   // ...add more notes as needed
 ];
 
