@@ -9,7 +9,7 @@ function CourseDetails() {
   useEffect(() => {
     const fetchCourse = async () => {
       try {
-        const res = await axios.get(`http://localhost:4001/book`);
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/book`);
         const found = res.data.find((item) => item._id === id);
         setCourse(found);
       } catch (error) {
