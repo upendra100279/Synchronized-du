@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes spin-gradient {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-gradient {
+  animation: spin-gradient 1.2s linear infinite;
+}
+
+@property --bg-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes spin {
+  to {
+    --bg-angle: 360deg;
+  }
+}
+
+.card-animated-border {
+  position: relative;
+  border-radius: 1rem;
+  transition: box-shadow 0.3s;
+  /* No border or background by default */
+}
+
+.card-animated-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem;
+  padding: 3px;
+  background:
+    linear-gradient(
+      to bottom,
+      oklch(0.1 0.2 240 / 0.95),
+      oklch(0.1 0.2 240 / 0.95)
+    ) padding-box,
+    conic-gradient(
+      from var(--bg-angle),
+      #22c55e 0%,
+      #22c55e 100%
+    ) border-box;
+  border: 4px solid transparent;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  z-index: 0; /* Lower z-index so content is above */
+}
+
+.card-animated-border:hover::before,
+.card-animated-border:focus-visible::before {
+  opacity: 1;
+  animation: spin 2.5s linear infinite;
+}
